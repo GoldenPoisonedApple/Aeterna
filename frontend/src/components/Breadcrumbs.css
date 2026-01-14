@@ -1,0 +1,40 @@
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-ui); /* New font var */
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.breadcrumb-item:hover {
+  color: var(--text-accent);
+}
+
+.breadcrumb-item.active {
+  color: var(--text-primary);
+  font-weight: bold;
+  pointer-events: none;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  margin-top: -2px; /* Visual alignment */
+}
