@@ -3,9 +3,12 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { ShieldAlert, FileText, Database, Settings, Shield } from 'lucide-react';
 import './Layout.css';
 
+import Disclaimer from './Disclaimer';
+
 const Layout: React.FC = () => {
   return (
     <div className="layout-container">
+      <Disclaimer />
       <div className="scanline"></div>
       
       <aside className="sidebar">
@@ -24,17 +27,26 @@ const Layout: React.FC = () => {
             Documents
           </div>
           
-          <NavLink to="/docs/organization" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+          <NavLink to="/docs/project-aeterna" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+            <Database className="nav-icon" />
+            <span>PROJECT AETERNA</span>
+          </NavLink>
+          <NavLink to="/docs/codica" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
             <FileText className="nav-icon" />
+            <span>CODICA (Main)</span>
+          </NavLink>
+          
+          <div style={{ margin: '1rem 0 0.5rem', paddingLeft: '1rem', fontSize: '0.7rem', color: '#666', textTransform: 'uppercase' }}>
+            Reference
+          </div>
+
+          <NavLink to="/docs/organization" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+            <Shield className="nav-icon" />
             <span>組織図・名簿</span>
           </NavLink>
           <NavLink to="/docs/protocols" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
-            <ShieldAlert className="nav-icon" />
+             <ShieldAlert className="nav-icon" />
             <span>発動プロトコル</span>
-          </NavLink>
-          <NavLink to="/docs/history" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
-            <Database className="nav-icon" />
-            <span>Codica計画</span>
           </NavLink>
           
           <div style={{ marginTop: 'auto' }}></div>
