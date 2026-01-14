@@ -51,7 +51,7 @@ export const AeternaDoc: React.FC = () => {
         <h2>4. サブプロジェクト一覧</h2>
         
         <div className="sub-project-card">
-          <h3>Genoma（ジェノマ） - 命の保管</h3>
+          <h3>Genoma - 命の保管 -</h3>
           <p>地球上の生物を保管する計画。</p>
           
           <h4>プロジェクト名規定</h4>
@@ -75,9 +75,9 @@ export const AeternaDoc: React.FC = () => {
           </ul>
         </div>
 
-        <div className="sub-project-card highlight">
-          <h3>Codica（コディカ） - 知の保管</h3>
-          <div style={{ textAlign: 'right', fontSize: '0.8rem' }}><a href="/docs/codica" style={{ color: '#ff3333' }}>[詳細文書へのアクセス制限解除]</a></div>
+        <div className="sub-project-card">
+          <h3>Codica - 知の保管 -</h3>
+          <div><a href="/docs/codica" style={{ color: '#00ff00' }}>[概要]</a></div>
           
           <h4>プロジェクト名規定</h4>
           <ul className="bullet-list">
@@ -102,7 +102,7 @@ export const AeternaDoc: React.FC = () => {
         </div>
 
         <div className="sub-project-card">
-          <h3>Expressa（エクスプレッサ） - 表現の保管</h3>
+          <h3>Expressa - 表現の保管 -</h3>
           
           <h4>プロジェクト名規定</h4>
           <ul className="bullet-list">

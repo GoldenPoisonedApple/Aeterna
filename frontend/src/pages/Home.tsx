@@ -5,8 +5,8 @@ const Home: React.FC = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-header">
-        <h1 className="dashboard-title">SYSTEM STATUS</h1>
-        <p className="dashboard-subtitle">Project Aeterna Central Monitoring Interface</p>
+        <h1 className="dashboard-title">Project Aeterna</h1>
+        <p className="dashboard-subtitle">これは投稿者が昔、中二病の時に考えていた設定集をまとめたページです。<br/>戦争等で「このままでは人類は一度死滅して文明が失われる」という状況になった時、遠い遠い将来生まれるであろう知的生命体のために、自分たちと同じ轍を踏まないように、天才達が後世に情報を遺すとしたらどんな情報をどんな方法でどうやって遺すんだろう。といったものをまとめています。<br/>これはフィクションです。実際の人物・団体・事件等とは一切関係ありません。</p>
       </div>
 
       <div className="info-card alert">

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Documents.css';
+import '../Documents.css';
 
 export const CodicaPlan: React.FC = () => {
   return (

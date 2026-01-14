@@ -3,15 +3,17 @@
   --bg-secondary: #111111;
   --bg-tertiary: #1a1a1a;
   
-  --text-primary: #e0e0e0;
-  --text-secondary: #a0a0a0;
-  --text-accent: #ff3333; /* 赤色：警告や重要な箇所 */
+  /* Update for better readability */
+  --text-primary: #f0f0f0; /* Brighter */
+  --text-secondary: #b0b0b0; /* Brighter */
+  --text-accent: #ff4d4d; /* Slightly softer red for better reading */
   
   --border-color: #333333;
   --border-accent: #ff3333;
   
-  --font-mono: 'Courier New', Courier, monospace;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Fonts */
+  --font-mono: 'Noto Sans JP', 'Roboto Mono', 'Courier New', monospace; /* Use Noto Sans JP for body if available */
+  --font-ui: 'Share Tech Mono', 'Courier New', monospace; /* For headers/UI */
   
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -23,9 +25,9 @@ body {
   padding: 0;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-mono);
+  font-family: var(--font-mono); /* Now uses Noto Sans JP by default for better Japanese readability */
   overflow-x: hidden;
-  line-height: 1.6;
+  line-height: 1.7; /* Increased from 1.6 */
 }
 
 /* スクロールバーのカスタマイズ */
@@ -54,7 +56,6 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin-top: 0;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
