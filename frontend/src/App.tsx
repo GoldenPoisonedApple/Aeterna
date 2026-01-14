@@ -2,9 +2,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import { AeternaDoc } from './pages/AeternaDoc';
-import { CodicaDoc } from './pages/CodicaDoc';
-import './pages/Documents.css'; 
+import { AeternaDoc } from './pages/docs/AeternaDoc';
+import { CodicaDoc } from './pages/docs/CodicaDoc';
+import { CodicaCharter } from './pages/docs/CodicaCharter';
+import { CodicaPlan } from './pages/docs/CodicaPlan';
+import './pages/docs/Documents.css'; 
 
 // プレースホルダーコンポーネント (まだ実装されていないもの用)
 const DocumentPlaceholder = ({ title }: { title: string }) => (
@@ -26,6 +28,8 @@ function App() {
         {/* 主要文書ルート */}
         <Route path="docs/project-aeterna" element={<AeternaDoc />} />
         <Route path="docs/codica" element={<CodicaDoc />} />
+        <Route path="docs/codica-charter" element={<CodicaCharter />} />
+        <Route path="docs/codica-plan" element={<CodicaPlan />} />
         
         {/* プレースホルダー・その他 */}
         <Route path="docs/organization" element={<DocumentPlaceholder title="主要構成員名簿及び組織図" />} />

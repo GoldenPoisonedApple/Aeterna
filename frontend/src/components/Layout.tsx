@@ -33,7 +33,15 @@ const Layout: React.FC = () => {
           </NavLink>
           <NavLink to="/docs/codica" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
             <FileText className="nav-icon" />
-            <span>CODICA (Main)</span>
+            <span>CODICA (概要)</span>
+          </NavLink>
+          <NavLink to="/docs/codica-charter" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+            <FileText className="nav-icon" />
+            <span>CODICA (憲章)</span>
+          </NavLink>
+          <NavLink to="/docs/codica-plan" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+            <FileText className="nav-icon" />
+            <span>CODICA (計画書)</span>
           </NavLink>
           
           <div style={{ margin: '1rem 0 0.5rem', paddingLeft: '1rem', fontSize: '0.7rem', color: '#666', textTransform: 'uppercase' }}>
