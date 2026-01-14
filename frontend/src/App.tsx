@@ -6,6 +6,12 @@ import { AeternaDoc } from './pages/docs/AeternaDoc';
 import { CodicaDoc } from './pages/docs/CodicaDoc';
 import { CodicaCharter } from './pages/docs/CodicaCharter';
 import { CodicaPlan } from './pages/docs/CodicaPlan';
+import { OrganizationChart } from './pages/docs/OrganizationChart';
+import { ActivationProtocols } from './pages/docs/ActivationProtocols';
+import { SecurityProtocols } from './pages/docs/SecurityProtocols';
+import { TheVault } from './pages/docs/TheVault';
+import { Chronicles } from './pages/docs/Chronicles';
+import { FinalRecordPackage } from './pages/docs/FinalRecordPackage';
 import './pages/docs/Documents.css'; 
 
 // プレースホルダーコンポーネント (まだ実装されていないもの用)
@@ -31,9 +37,13 @@ function App() {
         <Route path="docs/codica-charter" element={<CodicaCharter />} />
         <Route path="docs/codica-plan" element={<CodicaPlan />} />
         
-        {/* プレースホルダー・その他 */}
-        <Route path="docs/organization" element={<DocumentPlaceholder title="主要構成員名簿及び組織図" />} />
-        <Route path="docs/protocols" element={<DocumentPlaceholder title="発動トリガー計画書" />} />
+        {/* 実装済み文書 */}
+        <Route path="docs/organization" element={<OrganizationChart />} />
+        <Route path="docs/protocols" element={<ActivationProtocols />} />
+        <Route path="docs/security" element={<SecurityProtocols />} />
+        <Route path="docs/the-vault" element={<TheVault />} />
+        <Route path="docs/chronicles" element={<Chronicles />} />
+        <Route path="docs/final-record" element={<FinalRecordPackage />} />
         
         <Route path="settings" element={<DocumentPlaceholder title="SYSTEM CONFIGURATION" />} />
         <Route path="*" element={<div style={{color: 'red'}}>404: DATA NOT FOUND</div>} />
